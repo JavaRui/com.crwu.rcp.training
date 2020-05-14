@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.crwu.rcp.training.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="com.crwu.rcp.training.perspective.Perspective"
+            id="com.crwu.rcp.training.perspective">
+      </perspective>
+      <perspective
+            class="com.crwu.rcp.training.perspective.PerspectiveFolder"
+            id="com.crwu.rcp.training.PerspectiveFolder"
+            name="PerspectiveFolder">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="com.crwu.rcp.training.view.SelectionProviderTestView"
+            id="com.crwu.rcp.training.view.SelectionProviderTestView"
+            name="name"
+            restorable="true">
+        
+      </view>
+      <view
+            class="com.crwu.rcp.training.view.Demo4ListenerView"
+            id="com.crwu.rcp.training.view.Demo4ListenerView"
+            name="Demo4ListenerView"
+            restorable="true">
+      </view>
+      <view
+            class="com.crwu.rcp.training.view.Demo4ActionBarView"
+            id="com.crwu.rcp.training.view.Demo4ActionBarView"
+            name="Demo4ActionBarView"
+            restorable="true">
+      </view>
+   </extension>
+
+</plugin>
