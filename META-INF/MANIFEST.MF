@@ -28,3 +28,5 @@ Export-Package: com.crwu.bean,
  com.crwu.training.jface.menu,
  com.crwu.training.jface.preference,
  com.crwu.training.jface.styledtext
+Bundle-ClassPath: library.jar,
+ .

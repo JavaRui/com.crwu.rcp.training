@@ -18,10 +18,10 @@ import org.eclipse.ui.ISelectionListener;
 import org.eclipse.ui.IWorkbenchPart;
 import org.eclipse.ui.part.ViewPart;
 
+import com.crwu.common.ShellBack;
+import com.crwu.common.UiUtils;
 import com.crwu.rcp.training.action.SelectionProviderAction;
 import com.crwu.rcp.training.model.Country;
-import com.crwu.utils.ShellBack;
-import com.crwu.utils.UiUtils;
 /**
  * class desc�??
  * 

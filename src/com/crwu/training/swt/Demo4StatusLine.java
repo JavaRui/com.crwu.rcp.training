@@ -12,8 +12,8 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.ui.internal.layout.LayoutUtil;
 import com.crwu.common.LayoutDataUtils;
-import com.crwu.utils.ShellBack;
-import com.crwu.utils.UiUtils;
+import com.crwu.common.ShellBack;
+import com.crwu.common.UiUtils;
 /**
  * class desc�?
  * 

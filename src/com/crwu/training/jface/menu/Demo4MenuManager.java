@@ -9,10 +9,11 @@ import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Decorations;
 import org.eclipse.swt.widgets.Shell;
+
+import com.crwu.common.ShellBack;
+import com.crwu.common.UiUtils;
 import com.crwu.common.img.ImageFoctory;
 import com.crwu.common.img.ImgMgr;
-import com.crwu.utils.ShellBack;
-import com.crwu.utils.UiUtils;
 /**
  * class desc�?
  * 

@@ -6,8 +6,8 @@ import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Shell;
 
-import com.crwu.utils.ShellBack;
-import com.crwu.utils.UiUtils;
+import com.crwu.common.ShellBack;
+import com.crwu.common.UiUtils;
 /**
  * class  desc�?
  * @author WuChengRui  

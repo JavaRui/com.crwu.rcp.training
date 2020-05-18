@@ -19,9 +19,9 @@ import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.ui.internal.layout.LayoutUtil;
 import com.crwu.common.LayoutDataUtils;
+import com.crwu.common.ShellBack;
+import com.crwu.common.UiUtils;
 import com.crwu.utils.FileUtils;
-import com.crwu.utils.ShellBack;
-import com.crwu.utils.UiUtils;
 /**
  * class desc�?
  * 

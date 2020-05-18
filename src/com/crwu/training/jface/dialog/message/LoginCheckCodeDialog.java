@@ -21,8 +21,8 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
 
-import com.crwu.utils.ShellBack;
-import com.crwu.utils.UiUtils;
+import com.crwu.common.ShellBack;
+import com.crwu.common.UiUtils;
 public class LoginCheckCodeDialog extends Dialog {
     private Text text;
     private Label userLabel;

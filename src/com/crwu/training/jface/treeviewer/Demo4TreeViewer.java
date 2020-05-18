@@ -10,11 +10,12 @@ import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.TreeItem;
+
+import com.crwu.common.ShellBack;
+import com.crwu.common.UiUtils;
 import com.crwu.training.jface.treeviewer.provider.ITreeFace;
 import com.crwu.training.jface.treeviewer.provider.TreeContentProvider;
 import com.crwu.training.jface.treeviewer.provider.TreeLabelProvider;
-import com.crwu.utils.ShellBack;
-import com.crwu.utils.UiUtils;
 /**
  * class  desc�?
  * @author WuChengRui  

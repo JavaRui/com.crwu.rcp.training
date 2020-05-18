@@ -15,10 +15,10 @@ import org.eclipse.swt.widgets.TableColumn;
 
 import com.crwu.bean.SimpleBean;
 import com.crwu.common.LayoutDataUtils;
+import com.crwu.common.ShellBack;
+import com.crwu.common.UiUtils;
 import com.crwu.common.table.CommonTableViewerContentProvider;
 import com.crwu.training.jface.tableviewer.SimpleLabelProvider;
-import com.crwu.utils.ShellBack;
-import com.crwu.utils.UiUtils;
 /**
  * @author WuChengRui
  * @date 2018-5-14

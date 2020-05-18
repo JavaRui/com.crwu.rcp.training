@@ -3,7 +3,7 @@
  * @date 2018-5-14  
  * @desc   
  */
-package com.crwu.utils;
+package com.crwu.common;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.layout.GridData;
