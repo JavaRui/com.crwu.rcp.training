@@ -13,7 +13,7 @@ import org.eclipse.swt.widgets.FileDialog;
 import org.eclipse.swt.widgets.FontDialog;
 import org.eclipse.swt.widgets.Shell;
 
-import com.crwu.common.constants.YtConstants;
+import com.crwu.common.constants.Constants;
 import com.crwu.common.constants.xxx;
 public class ChooseDlgUtil {
 	
@@ -22,7 +22,7 @@ public class ChooseDlgUtil {
 		return dis.getActiveShell();
 	}
 	
-	private static String userPath = YtConstants.USER_DIR;
+	private static String userPath = Constants.USER_DIR;
 	
 	public static void main(String[] args) {
 		Display dis = new Display();

@@ -3,7 +3,7 @@ import java.io.File;
 /**
  * 常量配置类
  * */
-public class YtConstants {
+public class Constants {
 	public static final String $ = File.separatorChar + "";
 	public static String TITLE = "请选择";// softName+version
 	public static String USER_DIR = System.getProperty("user.dir") + $ + "";

@@ -9,8 +9,8 @@ import org.eclipse.swt.graphics.GC;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.graphics.Point;
 
-import com.crwu.common.YtColorUtil;
-import com.crwu.common.YtFontUtil;
+import com.crwu.common.ColorUtil;
+import com.crwu.common.FontUtil;
 import com.crwu.common.img.UiEnumData.ALIGN_TYPE;
 /**
  * @author cr.wu
@@ -37,7 +37,7 @@ import com.crwu.common.img.UiEnumData.ALIGN_TYPE;
 public class ImgAddTxt implements IImgAdd{
 	private Image imageTxt;
 	private String txt;
-	private Font font = YtFontUtil.getFontNor(0);
+	private Font font = FontUtil.getFontNor(0);
 	private int offsetX = 0;
 	private int offsetY = 0;
 	private int x = 0;
@@ -45,7 +45,7 @@ public class ImgAddTxt implements IImgAdd{
 	/**字体大小*/
 	private int fontHeight = 0;
 	/**字体颜色*/
-	private Color fontColor = YtColorUtil.whiteColor;
+	private Color fontColor = ColorUtil.whiteColor;
 	
 	private int style = SWT.NO_MERGE_PAINTS;
 	/**上下间隔*/
@@ -116,7 +116,7 @@ public class ImgAddTxt implements IImgAdd{
 			fontHeight = height;
 		}
 		this.style = style;
-		Font tempFont = new Font(null, YtFontUtil.FONT_STYLE, height, style);
+		Font tempFont = new Font(null, FontUtil.FONT_STYLE, height, style);
 		font = tempFont;
 	}
 	/**
@@ -199,8 +199,8 @@ public class ImgAddTxt implements IImgAdd{
 	 * */
 	private Point getPxByFontSize(int fontSize) {
 //		return Integer.valueOf((int) (Float.valueOf(fontSize) / 72 * 137));
-		Font font = YtFontUtil.getFontBold(fontSize);
-		Point p = YtFontUtil.getPxByText(txt, font);
+		Font font = FontUtil.getFontBold(fontSize);
+		Point p = FontUtil.getPxByText(txt, font);
 		return p;
 	}
 	/**

@@ -62,7 +62,7 @@ public class UiUtil {
     }
     
     /**
-     * 创建�??个swt程序
+     * 创建swt程序
      * @param inBack
      */
     public static void createSwt(ShellBack inBack) {

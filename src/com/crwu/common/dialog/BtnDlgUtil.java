@@ -1,4 +1,4 @@
-package com.crwu.common;
+package com.crwu.common.dialog;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -8,15 +8,14 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Text;
 
 import com.crwu.common.callback.INBack;
-import com.crwu.common.dialog.ChooseDlgUtil;
 /**
  * 2015-4-13
  * @author cr.wu
  *
  */
-public class ButtonUtil {
+public class BtnDlgUtil {
 	
-	private ButtonUtil(){
+	private BtnDlgUtil(){
 		
 	}
 	/**

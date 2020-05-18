@@ -5,7 +5,7 @@ package com.crwu.common.img;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Color;
 
-import com.crwu.common.YtColorUtil;
+import com.crwu.common.ColorUtil;
 import com.crwu.common.img.UiEnumData.ALIGN_TYPE;
 /**
  * @author cr.wu
@@ -15,7 +15,7 @@ import com.crwu.common.img.UiEnumData.ALIGN_TYPE;
 public class CustomFd {
 	
 	/**字体颜色*/
-	private Color fontColor = YtColorUtil.whiteColor;
+	private Color fontColor = ColorUtil.whiteColor;
 	private String txt = "";
 	private int height = 0;
 	private int style = SWT.NORMAL;
