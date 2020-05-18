@@ -1,16 +1,17 @@
 /**
  * 
  */
-package com.crwu.common.img;
+package com.crwu.common.img.compose;
 import org.eclipse.swt.graphics.Image;
 
-import com.crwu.common.img.UiEnumData.PIC_TYPE;
+import com.crwu.common.img.ImageFoctory;
+import com.crwu.common.img.compose.UiEnumData.PIC_TYPE;
 /**
  * @author cr.wu
  *
  * 2015�?7�?11�?
  */
-public class ImgMgr {
+public class ComposeMgr {
 	
 	
 	/**

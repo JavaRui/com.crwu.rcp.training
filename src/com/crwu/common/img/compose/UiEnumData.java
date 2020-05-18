@@ -1,17 +1,14 @@
-/**
- * 
- */
-package com.crwu.common.img;
+
+package com.crwu.common.img.compose;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Cursor;
 /**
  * @author cr.wu
  *
- * 2015�?7�?8�?
  */
 public class UiEnumData {
 	/**
-	 * 定义位置的枚�?
+	 * 定义位置的枚举
 	 * */
 	public static enum ALIGN_TYPE{
 		center , left , right;
@@ -41,21 +38,6 @@ public class UiEnumData {
 		imgNorOver
 	}
 	
-	public enum CURSOR_TYPE { 
-	    norCur, 
-	    handCur;
-	    public Cursor getDesc() { 
-	        switch (this.ordinal()) { 
-	            case 0: 
-	                return new Cursor(null, SWT.NORMAL); 
-	            case 1: 
-	                return new Cursor(null, SWT.CURSOR_HAND); 
-	            
-	            default: 
-	                return new Cursor(null, SWT.NORMAL); 
-	        } 
-	    } 
-	} 
 	
 	
 }

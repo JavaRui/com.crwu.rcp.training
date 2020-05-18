@@ -2,18 +2,11 @@ package com.crwu.training.jface.menu;
 import org.eclipse.jface.action.Action;
 import org.eclipse.jface.action.IAction;
 import org.eclipse.jface.action.IContributionItem;
-import org.eclipse.jface.action.IMenuListener;
-import org.eclipse.jface.action.IMenuManager;
 import org.eclipse.jface.action.MenuManager;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.swt.SWT;
-import org.eclipse.swt.widgets.Decorations;
 import org.eclipse.swt.widgets.Shell;
 
 import com.crwu.common.UiUtil;
 import com.crwu.common.callback.ShellBack;
-import com.crwu.common.img.ImageFoctory;
-import com.crwu.common.img.ImgMgr;
 /**
  * class desc�?
  * 

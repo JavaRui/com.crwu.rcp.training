@@ -1,12 +1,13 @@
 /**
  * 
  */
-package com.crwu.common.img;
+package com.crwu.common.img.compose;
 import org.eclipse.swt.graphics.GC;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.graphics.Point;
 
-import com.crwu.common.img.UiEnumData.ALIGN_TYPE;
+import com.crwu.common.img.ImageFoctory;
+import com.crwu.common.img.compose.UiEnumData.ALIGN_TYPE;
 /**
  * @author cr.wu
  *

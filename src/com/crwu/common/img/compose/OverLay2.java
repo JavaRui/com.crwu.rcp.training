@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.crwu.common.img;
+package com.crwu.common.img.compose;
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.graphics.ImageData;
@@ -11,7 +11,8 @@ import org.eclipse.ui.internal.OverlayIcon;
 
 import com.crwu.common.UiUtil;
 import com.crwu.common.callback.ShellBack;
-import com.crwu.common.img.UiEnumData.ALIGN_TYPE;
+import com.crwu.common.img.ImageFoctory;
+import com.crwu.common.img.compose.UiEnumData.ALIGN_TYPE;
 /**
  * @author cr.wu
  * 

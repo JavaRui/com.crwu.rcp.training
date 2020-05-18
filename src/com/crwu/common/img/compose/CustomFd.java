@@ -1,12 +1,12 @@
 /**
  * 
  */
-package com.crwu.common.img;
+package com.crwu.common.img.compose;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Color;
 
 import com.crwu.common.ColorUtil;
-import com.crwu.common.img.UiEnumData.ALIGN_TYPE;
+import com.crwu.common.img.compose.UiEnumData.ALIGN_TYPE;
 /**
  * @author cr.wu
  *
