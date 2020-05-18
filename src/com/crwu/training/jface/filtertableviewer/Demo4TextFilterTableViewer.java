@@ -16,11 +16,11 @@ import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.swt.widgets.Text;
 
 import com.crwu.bean.SimpleBean;
-import com.crwu.common.RandomUtil;
-import com.crwu.common.ShellBack;
-import com.crwu.common.UiUtils;
+import com.crwu.common.UiUtil;
+import com.crwu.common.callback.ShellBack;
 import com.crwu.common.table.CommonTableViewerContentProvider;
 import com.crwu.training.jface.tableviewer.SimpleLabelProvider;
+import com.crwu.utils.RandomUtil;
 /**
  * class  desc�?
  * @author WuChengRui  
@@ -30,7 +30,7 @@ public class Demo4TextFilterTableViewer implements ShellBack {
     
     private AbstractTableFilter filter;
     public static void main(String[] args) {
-        UiUtils.createSwt(new Demo4TextFilterTableViewer());
+        UiUtil.createSwt(new Demo4TextFilterTableViewer());
     }
     @Override
     public void callBack(Shell shell) {

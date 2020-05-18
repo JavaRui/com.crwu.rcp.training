@@ -13,8 +13,8 @@ import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 
-import com.crwu.common.ShellBack;
-import com.crwu.common.UiUtils;
+import com.crwu.common.UiUtil;
+import com.crwu.common.callback.ShellBack;
 /**
  * @author Administrator
  *
@@ -27,7 +27,7 @@ public class Demo4StyledText {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		UiUtils.createSwt(new ShellBack() {
+		UiUtil.createSwt(new ShellBack() {
 			
 			@Override
 			public void callBack(Shell shell) {

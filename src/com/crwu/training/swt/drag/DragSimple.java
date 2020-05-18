@@ -21,8 +21,8 @@ import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.swt.widgets.TableItem;
 
-import com.crwu.common.ShellBack;
-import com.crwu.common.UiUtils;
+import com.crwu.common.UiUtil;
+import com.crwu.common.callback.ShellBack;
 /**
  * @author Administrator
  *
@@ -35,7 +35,7 @@ public class DragSimple {
      * @param args
      */
     public static void main(String[] args) {
-        UiUtils.createSwt(new ShellBack() {
+        UiUtil.createSwt(new ShellBack() {
             
             @Override
             public void callBack(Shell shell) {

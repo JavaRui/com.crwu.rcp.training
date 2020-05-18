@@ -11,8 +11,8 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.TreeItem;
 
-import com.crwu.common.ShellBack;
-import com.crwu.common.UiUtils;
+import com.crwu.common.UiUtil;
+import com.crwu.common.callback.ShellBack;
 import com.crwu.training.jface.treeviewer.provider.ITreeFace;
 import com.crwu.training.jface.treeviewer.provider.TreeContentProvider;
 import com.crwu.training.jface.treeviewer.provider.TreeLabelProvider;
@@ -23,7 +23,7 @@ import com.crwu.training.jface.treeviewer.provider.TreeLabelProvider;
  */
 public class Demo4TreeViewer {
     public static void main(String[] args) {
-        UiUtils.createSwt(new ShellBack() {
+        UiUtil.createSwt(new ShellBack() {
             
             @Override
             public void callBack(Shell shell) {

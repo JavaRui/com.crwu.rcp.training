@@ -4,12 +4,13 @@
 package com.crwu.common.img;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Color;
-import com.crwu.common.UiEnumData.ALIGN_TYPE;
+
 import com.crwu.common.YtColorUtil;
+import com.crwu.common.img.UiEnumData.ALIGN_TYPE;
 /**
  * @author cr.wu
  *
- * 2015�?7�?8�?
+ * 2015�?7�?8�?
  */
 public class CustomFd {
 	
@@ -18,12 +19,12 @@ public class CustomFd {
 	private String txt = "";
 	private int height = 0;
 	private int style = SWT.NORMAL;
-	/**另外添加的图�?*/
+	/**另外添加的图�?*/
 	private String overPic = "";
 	
-	/**   =============    以下是共有参�?    =================*/
+	/**   =============    以下是共有参�?    =================*/
 	/**
-	 * 参�?�enmuData.ALIGN_TYPE
+	 * 参�?�enmuData.ALIGN_TYPE
 	 * */
 	private ALIGN_TYPE alignType = ALIGN_TYPE.center;
 	/**x坐标偏移*/

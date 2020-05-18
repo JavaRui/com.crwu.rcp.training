@@ -24,7 +24,7 @@ import org.eclipse.swt.widgets.FileDialog;
 import org.eclipse.swt.widgets.Shell; 
 import org.eclipse.swt.widgets.Text;
 
-import com.crwu.utils.FileUtils;
+import com.crwu.utils.FileUtil;
 public class FileViewer extends ApplicationWindow { 
     Text text; 
     String content; 
@@ -59,7 +59,7 @@ public class FileViewer extends ApplicationWindow {
             System.out.println("Total number of lines: " + lines); 
         } 
     }; 
-    Action actionCount = new Action("Count", ImageDescriptor.createFromFile(null, FileUtils.getSrcDir() + "/icons/logo.gif")) { 
+    Action actionCount = new Action("Count", ImageDescriptor.createFromFile(null, FileUtil.getSrcDir() + "/icons/logo.gif")) { 
         public void run() { 
             try { 
                 FileViewer.this.run(true, true, runnableWithProgress); 
@@ -83,7 +83,7 @@ public class FileViewer extends ApplicationWindow {
         text.setSize(300, 200); 
         return text; 
     } 
-    Action actionOpenFile = new Action("Open", ImageDescriptor.createFromFile(null, FileUtils.getSrcDir() + "/icons/logo.gif")) { 
+    Action actionOpenFile = new Action("Open", ImageDescriptor.createFromFile(null, FileUtil.getSrcDir() + "/icons/logo.gif")) { 
         public void run() { 
             FileDialog dialog = new FileDialog(getShell(), SWT.OPEN); 
             final String file = dialog.open(); 

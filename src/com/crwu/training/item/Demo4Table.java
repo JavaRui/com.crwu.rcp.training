@@ -18,10 +18,10 @@ import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.ui.internal.layout.LayoutUtil;
-import com.crwu.common.LayoutDataUtils;
-import com.crwu.common.ShellBack;
-import com.crwu.common.UiUtils;
-import com.crwu.utils.FileUtils;
+import com.crwu.common.LayoutDataUtil;
+import com.crwu.common.UiUtil;
+import com.crwu.common.callback.ShellBack;
+import com.crwu.utils.FileUtil;
 /**
  * class desc�?
  * 
@@ -38,7 +38,7 @@ public class Demo4Table {
         shell.setLayout(new GridLayout());
         
         final Table table = new Table(shell, SWT.MULTI | SWT.FULL_SELECTION | SWT.CHECK);
-        table.setLayoutData(LayoutDataUtils.createFillGrid()   );
+        table.setLayoutData(LayoutDataUtil.createFillGrid()   );
         table.setHeaderVisible(true);// 设置显示表头
         table.setLinesVisible(true);// 设置显示表格�?/*
         // 创建表头的字符串数组
@@ -71,13 +71,13 @@ public class Demo4Table {
             // 如果不调用pack，则要设置宽�?
 //            tableColumn.pack();
         }
-        table.setLayoutData(LayoutDataUtils.createFillGrid()   );
+        table.setLayoutData(LayoutDataUtil.createFillGrid()   );
        
         // 添加1行数�?
         TableItem item = new TableItem(table, SWT.NONE);
         item.setText(new String[] { "张三", "�?", "123", "" });
         // 设置图标
-        item.setImage(new Image(null, FileUtils.getSrcDir()+"\\icons\\logo.gif"));
+        item.setImage(new Image(null, FileUtil.getSrcDir()+"\\icons\\logo.gif"));
         for (int i = 0; i < 5; i++) {
             item = new TableItem(table, SWT.NONE);
             item.setText(new String[] { "李四", "�?", "458"+i, "" });
@@ -91,7 +91,7 @@ public class Demo4Table {
         for(int i = 0 ; i < controls.length ; i ++ ){
             controls[i] = new Text(cc,SWT.BORDER);
         }
-        cc.setLayoutData(LayoutDataUtils.createFillGridNoVer(1))    ;
+        cc.setLayoutData(LayoutDataUtil.createFillGridNoVer(1))    ;
         GridLayout layout = new GridLayout(controls.length, false);
         layout.marginLeft = -5;
         layout.horizontalSpacing = 0;
@@ -143,7 +143,7 @@ public class Demo4Table {
     }
     
     public static void main(String[] args) {
-        UiUtils.createSwt(new ShellBack() {
+        UiUtil.createSwt(new ShellBack() {
             @Override
             public void callBack(Shell shell) {
                new Demo4Table(shell);

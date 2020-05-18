@@ -20,7 +20,7 @@ import org.eclipse.swt.widgets.ToolItem;
  * @category swt扩展功能模块
  * 
  * */
-public class LayoutDataUtils {
+public class LayoutDataUtil {
 	
 	
 	
@@ -37,7 +37,7 @@ public class LayoutDataUtils {
 		return gd;
 	}
 	/**
-	 * 创建样式为充满，且全�??占满，占有gridCount个数个griddata
+	 * 创建样式为充满，且全�??占满，占有gridCount个数个griddata
 	 * @param gridCount 水平方向的占用grid数量
 	 * @return GridData
 	 * */

@@ -10,9 +10,9 @@ import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Shell;
-import com.crwu.common.LayoutDataUtils;
+import com.crwu.common.LayoutDataUtil;
 /**
- * class desc�?
+ * class desc�?
  * 
  * @author WuChengRui
  * @date 2018-9-17
@@ -28,10 +28,10 @@ public class SimpleWizardDialog extends WizardDialog {
                 WizardPage page = (WizardPage) event.getSelectedPage();
                 if (page.getName().equals(BookSurveyWizard.Q2)) {
                     //显示按钮
-                    LayoutDataUtils.setExclude(createHelpControl, true);
+                    LayoutDataUtil.setExclude(createHelpControl, true);
                 } else {
                     //隐藏
-                    LayoutDataUtils.setExclude(createHelpControl, false);
+                    LayoutDataUtil.setExclude(createHelpControl, false);
                 }
             }
         });
@@ -46,7 +46,7 @@ public class SimpleWizardDialog extends WizardDialog {
         dealChildBtnTextToCh(parent);
     }
     /**
-     * 将文字修改成中文,�?好就按钮i18的方式去进行配置
+     * 将文字修改成中文,�?好就按钮i18的方式去进行配置
      * @param parent
      */
     private void dealChildBtnTextToCh(Composite parent) {
@@ -60,13 +60,13 @@ public class SimpleWizardDialog extends WizardDialog {
             if (btn.getText().equals(IDialogConstants.OK_LABEL)) {
                 btn.setText("好的");
             } else if (btn.getText().equals(IDialogConstants.CANCEL_LABEL)) {
-                btn.setText("不要�?");
+                btn.setText("不要�?");
             } else if (btn.getText().equals(IDialogConstants.FINISH_LABEL)) {
-                btn.setText("完成�?");
+                btn.setText("完成�?");
             } else if (btn.getText().equals(IDialogConstants.BACK_LABEL)) {
                 btn.setText("回滚");
             } else if (btn.getText().equals(IDialogConstants.NEXT_LABEL)) {
-                btn.setText("下一�?");
+                btn.setText("下一�?");
             }
             System.out.println(btn.getText());
         }

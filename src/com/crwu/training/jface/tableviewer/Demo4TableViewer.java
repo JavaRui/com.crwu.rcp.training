@@ -12,10 +12,10 @@ import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 
 import com.crwu.bean.SimpleBean;
-import com.crwu.common.RandomUtil;
-import com.crwu.common.ShellBack;
-import com.crwu.common.UiUtils;
+import com.crwu.common.UiUtil;
+import com.crwu.common.callback.ShellBack;
 import com.crwu.common.table.CommonTableViewerContentProvider;
+import com.crwu.utils.RandomUtil;
 /**
  * @author WuChengRui
  * @date 2018-5-14
@@ -23,7 +23,7 @@ import com.crwu.common.table.CommonTableViewerContentProvider;
  */
 public class Demo4TableViewer implements ShellBack {
     public static void main(String[] args) {
-        UiUtils.createSwt(new Demo4TableViewer());
+        UiUtil.createSwt(new Demo4TableViewer());
     }
     @Override
     public void callBack(Shell shell) {

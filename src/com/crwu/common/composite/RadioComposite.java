@@ -9,8 +9,8 @@ import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
 
-import com.crwu.common.ShellBack;
-import com.crwu.common.UiUtils;
+import com.crwu.common.UiUtil;
+import com.crwu.common.callback.ShellBack;
 /**
  * class  desc�??
  * @author WuChengRui  
@@ -60,7 +60,7 @@ public class RadioComposite extends Composite{
     }
     
     public static void main(String[] args) {
-        UiUtils.createSwt(new ShellBack() {
+        UiUtil.createSwt(new ShellBack() {
             
             @Override
             public void callBack(Shell shell) {

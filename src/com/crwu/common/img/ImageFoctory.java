@@ -59,7 +59,7 @@ public class ImageFoctory {
 	}
 	
 	/**
-	 * 设置图片的大�?
+	 * 设置图片的大小
 	 * */
 	public static Image setSize(Image image ,int width,int height){
 		if(width == -1&&height == -1){
@@ -77,7 +77,7 @@ public class ImageFoctory {
 		gc.dispose();
 		
 	
-		image.dispose();//原图片资源释�?
+		image.dispose();//原图片资源释�?
 		return imageNew;
 	}
 	
@@ -102,11 +102,11 @@ public class ImageFoctory {
 			url = new URL(u);
 			// 打开链接
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-			// 设置请求方式�?"GET"
+			// 设置请求方式�?"GET"
 			conn.setRequestMethod("GET");
-			// 超时响应时间�?5�?
+			// 超时响应时间�?5�?
 			conn.setConnectTimeout(5 * 1000);
-			// 通过输入流获取图片数�?
+			// 通过输入流获取图片数�?
 			inStream = conn.getInputStream();
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
@@ -136,7 +136,7 @@ public class ImageFoctory {
 		data = null;
 	}
 	/**
-	 * 将网络图片存到本�?
+	 * 将网络图片存到本�?
 	 * */
 	public static void netToNative(String netPath,String savePath,int[] size,int format){
 		if(format == 0){
@@ -175,7 +175,7 @@ public class ImageFoctory {
 		
 	}
 	/**
-	 * �?测格�?
+	 * �?测格�?
 	 * */
 	public static int checkPicFormat(String path){
 		if(path.length() == 0)return 0;

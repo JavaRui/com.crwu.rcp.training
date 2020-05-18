@@ -15,7 +15,7 @@ import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Display;
-import com.crwu.common.LayoutDataUtils;
+import com.crwu.common.LayoutDataUtil;
   
   
 public class Demo4Wizard extends ApplicationWindow{  
@@ -31,11 +31,11 @@ public class Demo4Wizard extends ApplicationWindow{
         
         parent.setLayout(new RowLayout(SWT.VERTICAL));  
         Button button  = new Button(parent, SWT.NONE);  
-        button.setText("打开�?单向导对话框");  
+        button.setText("打开�?单向导对话框");  
         button.addSelectionListener(new SelectionAdapter(){  
             public void widgetSelected(SelectionEvent e){  
                 DialogSettings setting = new DialogSettings("");
-                //建立并打�?打开向导对话框，该对话框使用�? BookSurveyWizard 向导  
+                //建立并打�?打开向导对话框，该对话框使用�? BookSurveyWizard 向导  
                 BookSurveyWizard bookSurveyWizard = new BookSurveyWizard();
                 bookSurveyWizard.setDialogSettings(setting);
                 WizardDialog dlg = new SimpleWizardDialog(Display.getCurrent().getActiveShell(),  

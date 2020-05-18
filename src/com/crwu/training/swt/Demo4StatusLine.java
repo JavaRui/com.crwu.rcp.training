@@ -11,9 +11,9 @@ import org.eclipse.swt.widgets.ProgressBar;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.ui.internal.layout.LayoutUtil;
-import com.crwu.common.LayoutDataUtils;
-import com.crwu.common.ShellBack;
-import com.crwu.common.UiUtils;
+import com.crwu.common.LayoutDataUtil;
+import com.crwu.common.UiUtil;
+import com.crwu.common.callback.ShellBack;
 /**
  * class desc�?
  * 
@@ -43,7 +43,7 @@ public class Demo4StatusLine extends Composite{
         messageText.setLayoutData(new GridData(200, 20));
         
         Label tempLabel = new Label(this, 0);
-        tempLabel.setLayoutData(LayoutDataUtils.createFillGridNoVer(1));
+        tempLabel.setLayoutData(LayoutDataUtil.createFillGridNoVer(1));
         
         progressBar = new ProgressBar(this, SWT.SMOOTH);
         progressBar.setLayoutData(new GridData(200, 20));
@@ -77,14 +77,14 @@ public class Demo4StatusLine extends Composite{
     }
     
     public static void main(String[] args) {
-        UiUtils.createSwt(new ShellBack() {
+        UiUtil.createSwt(new ShellBack() {
             private Demo4StatusLine demo4StatusLine;
             @Override
             public void callBack(Shell shell) {
                 shell.setLayout(new GridLayout());
                 
                 Composite contentComp = new Composite(shell, SWT.BORDER);
-                contentComp.setLayoutData(LayoutDataUtils.createFillGrid(1));
+                contentComp.setLayoutData(LayoutDataUtil.createFillGrid(1));
                 contentComp.setLayout(new GridLayout(2, true));
                 Button btn = new Button(contentComp, SWT.PUSH);
                 btn.setText("click");
@@ -102,7 +102,7 @@ public class Demo4StatusLine extends Composite{
                 });
                 
                 demo4StatusLine = new Demo4StatusLine(shell, 0);
-                demo4StatusLine.setLayoutData(LayoutDataUtils.createFillGridNoVer(1));
+                demo4StatusLine.setLayoutData(LayoutDataUtil.createFillGridNoVer(1));
             }
         });
     }

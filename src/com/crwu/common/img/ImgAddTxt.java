@@ -8,30 +8,31 @@ import org.eclipse.swt.graphics.Font;
 import org.eclipse.swt.graphics.GC;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.graphics.Point;
-import com.crwu.common.UiEnumData.ALIGN_TYPE;
+
 import com.crwu.common.YtColorUtil;
 import com.crwu.common.YtFontUtil;
+import com.crwu.common.img.UiEnumData.ALIGN_TYPE;
 /**
  * @author cr.wu
  *
- * 2015�?7�?8�?
+ * 2015�?7�?8�?
  * 
- * 例子1�?
- * ImgAddTxt img = new ImgAddTxt(ImagePath.T, "我就�?");
+ * 例子1�?
+ * ImgAddTxt img = new ImgAddTxt(ImagePath.T, "我就�?");
 		
 		img.createImage();
 		Image image = img.getImageTxt();
 		
-	ImgAddTxt img = new ImgAddTxt(image, "我就�?");
+	ImgAddTxt img = new ImgAddTxt(image, "我就�?");
 		
 		img.createImage();
 		
-	合并图片和文�?
+	合并图片和文�?
  */
 /**
  * @author cr.wu
  *
- * 2015�?7�?8�?
+ * 2015�?7�?8�?
  */
 public class ImgAddTxt implements IImgAdd{
 	private Image imageTxt;
@@ -84,7 +85,7 @@ public class ImgAddTxt implements IImgAdd{
 	}
 	
 	/**
-	 * 设置很多参数，用类传�?
+	 * 设置很多参数，用类传�?
 	 * @param fd 
 	 */
 	public void setCustomFd(CustomFd fd){
@@ -125,7 +126,7 @@ public class ImgAddTxt implements IImgAdd{
 		this.alignType = alignType;
 	}
 	/**
-	 * 获取生成之后的图�?
+	 * 获取生成之后的图�?
 	 * */
 	public Image getImage(){
 		
@@ -149,7 +150,7 @@ public class ImgAddTxt implements IImgAdd{
 			GC gc = createGc();
 			fontHeight = font.getFontData()[0].getHeight();
 			int textWidth = gc.textExtent(txt).x;
-			//当文字的实际宽度大于图片的宽�?.
+			//当文字的实际宽度大于图片的宽�?.
 			if(textWidth >= imageTxt.getImageData().width-horSpace){
 				
 				imageTxt = ImageFoctory.setSize(imageTxt, textWidth+horSpace, -1);
@@ -194,7 +195,7 @@ public class ImgAddTxt implements IImgAdd{
 		this.offsetY = offsetY;
 	}
 	/**
-	 * 计算�?个字占有多少像素,只针对swt下的微软雅黑，且会有些偏�?
+	 * 计算�?个字占有多少像素,只针对swt下的微软雅黑，且会有些偏�?
 	 * */
 	private Point getPxByFontSize(int fontSize) {
 //		return Integer.valueOf((int) (Float.valueOf(fontSize) / 72 * 137));
@@ -223,7 +224,7 @@ public class ImgAddTxt implements IImgAdd{
 		
 		int w = imageTxt.getImageData().width;
 		int h = imageTxt.getImageData().height;
-		//没个文本的高�?
+		//没个文本的高�?
 		int fd = getPxByFontSize(fontHeight).y;
 		//fd * txt.length()
 		int txtWidth = getPxByFontSize(fontHeight).x;

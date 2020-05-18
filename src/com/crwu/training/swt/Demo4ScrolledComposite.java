@@ -9,8 +9,8 @@ import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Shell;
 
-import com.crwu.common.ShellBack;
-import com.crwu.common.UiUtils;
+import com.crwu.common.UiUtil;
+import com.crwu.common.callback.ShellBack;
 /**
  * class  desc�?
  * @author WuChengRui  
@@ -55,7 +55,7 @@ public class Demo4ScrolledComposite extends Composite{
     }
     public static void main(String[] args) {
         
-        UiUtils.createSwt(new ShellBack() {
+        UiUtil.createSwt(new ShellBack() {
             
             @Override
             public void callBack(Shell shell) {

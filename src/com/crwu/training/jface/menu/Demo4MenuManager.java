@@ -10,8 +10,8 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Decorations;
 import org.eclipse.swt.widgets.Shell;
 
-import com.crwu.common.ShellBack;
-import com.crwu.common.UiUtils;
+import com.crwu.common.UiUtil;
+import com.crwu.common.callback.ShellBack;
 import com.crwu.common.img.ImageFoctory;
 import com.crwu.common.img.ImgMgr;
 /**
@@ -113,7 +113,7 @@ public class Demo4MenuManager {
     }
     
     public static void main(String[] args) {
-        UiUtils.createSwt(new ShellBack() {
+        UiUtil.createSwt(new ShellBack() {
             @Override
             public void callBack(Shell shell) {
                new Demo4MenuManager(shell);

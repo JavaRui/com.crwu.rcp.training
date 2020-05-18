@@ -3,12 +3,12 @@
  */
 package com.crwu.common.img;
 import org.eclipse.swt.graphics.Image;
-import com.crwu.common.UiEnumData;
-import com.crwu.common.UiEnumData.PIC_TYPE;
+
+import com.crwu.common.img.UiEnumData.PIC_TYPE;
 /**
  * @author cr.wu
  *
- * 2015�?7�?11�?
+ * 2015�?7�?11�?
  */
 public class ImgMgr {
 	
@@ -17,7 +17,7 @@ public class ImgMgr {
 	 * 生成图片数组
 	 * @param imagePath 基础图片
 	 * @param fd 特殊参数
-	 * @param picType 组合图片的方�?
+	 * @param picType 组合图片的方�?
 	 * @return
 	 */
 	public static Image[] setImage(String imagePath , CustomFd fd ,UiEnumData.PIC_TYPE picType){
@@ -66,7 +66,7 @@ public class ImgMgr {
 	}
 	
 	/**
-	 * 如果不需要设置fd，可以调用此方法传�??
+	 * 如果不需要设置fd，可以调用此方法传�??
 	 * */
 	public static Image[] setImage(String imagePath ,String txt ,UiEnumData.PIC_TYPE picType){ 
 		CustomFd fd = CustomFd.getTxtFd(txt);
@@ -81,7 +81,7 @@ public class ImgMgr {
 		return setImage(imagePath , "" ,picType);
 	}
 	
-	/**  =============    获取�?单的图片+文本    =====================*/
+	/**  =============    获取�?单的图片+文本    =====================*/
 	public static Image getSimpleLT(String imagePath , String txt){
 		return getSimpleLT(ImageFoctory.getImg(imagePath),txt);
 	}

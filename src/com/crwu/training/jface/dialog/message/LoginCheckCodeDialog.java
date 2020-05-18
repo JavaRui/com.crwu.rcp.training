@@ -21,8 +21,8 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
 
-import com.crwu.common.ShellBack;
-import com.crwu.common.UiUtils;
+import com.crwu.common.UiUtil;
+import com.crwu.common.callback.ShellBack;
 public class LoginCheckCodeDialog extends Dialog {
     private Text text;
     private Label userLabel;
@@ -158,7 +158,7 @@ public class LoginCheckCodeDialog extends Dialog {
     }
     public static void main(String[] args) {
         //"https://pin.aliyun.com/get_img?sessionid=471da3bd2b82d90709ddba7f506a56ca&identity=taobao.login&type=150_40"
-        UiUtils.createSwt(new ShellBack() {
+        UiUtil.createSwt(new ShellBack() {
             
             @Override
             public void callBack(Shell shell) {

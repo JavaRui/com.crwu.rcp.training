@@ -1,25 +1,25 @@
 /**
  * 
  */
-package com.crwu.common;
+package com.crwu.common.img;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Cursor;
 /**
  * @author cr.wu
  *
- * 2015�?7�?8�?
+ * 2015�?7�?8�?
  */
 public class UiEnumData {
 	/**
-	 * 定义位置的枚�?
+	 * 定义位置的枚�?
 	 * */
 	public static enum ALIGN_TYPE{
 		center , left , right;
 	}
 	/**
-	 * 在imgMgr里面有引用实�?
-	 * 定义图片类型的枚�?
-	 * img 单图�?   
+	 * 在imgMgr里面有引用实�?
+	 * 定义图片类型的枚�?
+	 * img 单图�?   
 	 * imgTxt 图片+文字    
 	 * imgImg 图片+图片   
 	 * imgNorOverImg nor图片+图片,over图片+图片   
@@ -27,7 +27,7 @@ public class UiEnumData {
 	 * imgNorOverTxt 图片nor+图片over+txt文本   
 	 * */
 	public static enum PIC_TYPE{
-		/**img 单图�?   */
+		/**img 单图�?   */
 		img,
 		/**imgTxt 图片+文字     */
 		imgTxt,

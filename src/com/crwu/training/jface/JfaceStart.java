@@ -1,6 +1,6 @@
 package com.crwu.training.jface;
 /**
- * class  desc�?
+ * class  desc�?
  * @author WuChengRui  
  * @date 2018-6-7  
  */
@@ -21,7 +21,8 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
-import com.crwu.common.RandomUtil;
+
+import com.crwu.utils.RandomUtil;
   
 public class JfaceStart extends ApplicationWindow{  
       
@@ -51,7 +52,7 @@ public class JfaceStart extends ApplicationWindow{
       
     protected void configureShell(Shell shell){  
         super.configureShell(shell);  
-        shell.setText("�?单写字板");  
+        shell.setText("�?单写字板");  
         shell.setSize(500, 300);
         
 //        shell.setMaximized(true);  
@@ -83,7 +84,7 @@ public class JfaceStart extends ApplicationWindow{
         MenuManager menuBar = new MenuManager();  
           
         MenuManager fileMenu = new MenuManager("文件(&F)");  
-        fileMenu.add(new Action("点我�?") {
+        fileMenu.add(new Action("点我�?") {
             /* (non-Javadoc)
              * @see org.eclipse.jface.action.Action#run()
              */

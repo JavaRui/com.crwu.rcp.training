@@ -14,9 +14,9 @@ import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 
 import com.crwu.bean.SimpleBean;
-import com.crwu.common.LayoutDataUtils;
-import com.crwu.common.ShellBack;
-import com.crwu.common.UiUtils;
+import com.crwu.common.LayoutDataUtil;
+import com.crwu.common.UiUtil;
+import com.crwu.common.callback.ShellBack;
 import com.crwu.common.table.CommonTableViewerContentProvider;
 import com.crwu.training.jface.tableviewer.SimpleLabelProvider;
 /**
@@ -26,7 +26,7 @@ import com.crwu.training.jface.tableviewer.SimpleLabelProvider;
  */
 public class Demo4HeaderTableViewer {
     public static void main(String[] args) {
-        UiUtils.createSwt(new ShellBack() {
+        UiUtil.createSwt(new ShellBack() {
             @Override
             public void callBack(Shell shell) {
                 final GridLayout layout = new GridLayout();
@@ -68,7 +68,7 @@ public class Demo4HeaderTableViewer {
                 List<SimpleBean> tempList = new ArrayList<>();
                 tempList.add(new SimpleBean());
                 headerviewer.setCellEditors(editors);
-                GridData createFillGridNoVer = LayoutDataUtils.createFillGridNoVer(1);
+                GridData createFillGridNoVer = LayoutDataUtil.createFillGridNoVer(1);
                 createFillGridNoVer.heightHint = 30;
                 headerviewer.getTable().setLayoutData(createFillGridNoVer);
                 headerviewer.setColumnProperties(headers);
@@ -98,7 +98,7 @@ public class Demo4HeaderTableViewer {
                 
                 table1.setHeaderVisible(false);// 设置标头
                 table1.setLinesVisible(true);// 显示表格�?
-                GridData createFillGrid = LayoutDataUtils.createFillGrid();
+                GridData createFillGrid = LayoutDataUtil.createFillGrid();
 //                createFillGrid.verticalAlignment = -5;
                 table1.setLayoutData(createFillGrid);
                 // 4.设定内容�?,�?般都不用修改这个�?

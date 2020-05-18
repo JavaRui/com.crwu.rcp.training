@@ -13,7 +13,7 @@ import com.crwu.rcp.training.Activator;
  * @date 2018-5-15
  * @desc 文件处理�??
  */
-public class FileUtils {
+public class FileUtil {
     /**
      * 获得指定文件的byte数组
      */

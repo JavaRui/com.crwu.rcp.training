@@ -18,8 +18,8 @@ import org.eclipse.ui.ISelectionListener;
 import org.eclipse.ui.IWorkbenchPart;
 import org.eclipse.ui.part.ViewPart;
 
-import com.crwu.common.ShellBack;
-import com.crwu.common.UiUtils;
+import com.crwu.common.UiUtil;
+import com.crwu.common.callback.ShellBack;
 import com.crwu.rcp.training.action.SelectionProviderAction;
 import com.crwu.rcp.training.model.Country;
 /**
@@ -34,7 +34,7 @@ public class SelectionProviderTestView extends ViewPart implements ISelectionLis
     private ISelection selection;
     ArrayList myListeners = new ArrayList();
     public static void main(String[] args) {
-        UiUtils.createSwt(new ShellBack() {
+        UiUtil.createSwt(new ShellBack() {
             @Override
             public void callBack(Shell shell) {
                 ListViewer listViewer = new ListViewer(shell, SWT.BORDER | SWT.MULTI | SWT.H_SCROLL | SWT.V_SCROLL);

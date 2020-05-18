@@ -3,7 +3,7 @@
  * @date 2018-5-11  
  * @desc   
  */
-package com.crwu.common;
+package com.crwu.common.callback;
 import org.eclipse.swt.widgets.Shell;
 /**
  * @author ruien.wu  

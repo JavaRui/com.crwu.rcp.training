@@ -9,9 +9,9 @@ import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.ui.internal.OverlayIcon;
 
-import com.crwu.common.ShellBack;
-import com.crwu.common.UiUtils;
-import com.crwu.common.UiEnumData.ALIGN_TYPE;
+import com.crwu.common.UiUtil;
+import com.crwu.common.callback.ShellBack;
+import com.crwu.common.img.UiEnumData.ALIGN_TYPE;
 /**
  * @author cr.wu
  * 
@@ -102,7 +102,7 @@ public class OverLay2 extends OverlayIcon {
 	}
 	
 	public static void main(String[] args) {
-        UiUtils.createSwt(new ShellBack() {
+        UiUtil.createSwt(new ShellBack() {
             
             @Override
             public void callBack(Shell shell) {

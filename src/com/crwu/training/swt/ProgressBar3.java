@@ -1,6 +1,6 @@
 package com.crwu.training.swt;
 /**
- * class  desc�?
+ * class  desc�?
  * @author WuChengRui  
  * @date 2018-8-15  
  */
@@ -17,7 +17,7 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.ProgressBar;
 import org.eclipse.swt.widgets.Shell;
-import com.crwu.common.LayoutDataUtils;
+import com.crwu.common.LayoutDataUtil;
 public class ProgressBar3 {
     private Display display;
     private Shell shell;
@@ -34,8 +34,8 @@ public class ProgressBar3 {
         shell.setSize(250, 170);
         // ---------创建窗口中的其他界面组件-------------
         shell.setLayout(new GridLayout());
-        createMainComp(shell);// 创建主面�?
-        createStatusbar(shell);// 创建工具�?
+        createMainComp(shell);// 创建主面�?
+        createStatusbar(shell);// 创建工具�?
         // -----------------END------------------------
         shell.layout();
         shell.open();
@@ -53,7 +53,7 @@ public class ProgressBar3 {
     }
     private void createButton(Composite parent) {
         final Button b1 = new Button(parent, SWT.NONE);
-        b1.setText("隐藏状�?�栏");
+        b1.setText("隐藏状�?�栏");
         b1.addSelectionListener(new SelectionAdapter() {
             private boolean flag = true;
             public void widgetSelected(SelectionEvent e) {
@@ -61,18 +61,18 @@ public class ProgressBar3 {
                 GridData data = (GridData) statusbar.getLayoutData();
                 data.exclude = flag;
                 shell.layout();
-                b1.setText((flag ? "显示" : "隐藏") + "状�?�栏");
+                b1.setText((flag ? "显示" : "隐藏") + "状�?�栏");
                 flag = !flag;
             }
         });
         hideProbarButton = new Button(parent, SWT.NONE);
-        hideProbarButton.setText("隐藏进度�?");
+        hideProbarButton.setText("隐藏进度�?");
 //        hideProbarButton.setEnabled(false);
         hideProbarButton.addSelectionListener(new SelectionAdapter() {
             private boolean flag = false;
             public void widgetSelected(SelectionEvent e) {
                 progressBar.setVisible(flag);
-                hideProbarButton.setText((flag ? "隐藏" : "显示") + "进度�?");
+                hideProbarButton.setText((flag ? "隐藏" : "显示") + "进度�?");
                 flag = !flag;
             }
         });
@@ -88,14 +88,14 @@ public class ProgressBar3 {
                     go();
             }
             private void stop() {
-                b3.setEnabled(false);// 停止�?要时间，在完全停止前要防止再次开始�??
+                b3.setEnabled(false);// 停止�?要时间，在完全停止前要防止再次开始�??
                 b3.setText("GO");
             }
             private void go() {
                 b3.setText("STOP");
                 progressBar = createProgressBar(statusbar);
                 hideProbarButton.setEnabled(true);
-                statusbar.layout();// 重新布局�?下工具栏，使进度条显示出�?
+                statusbar.layout();// 重新布局�?下工具栏，使进度条显示出�?
                 new Thread() {
                     public void run() {
                         for (int i = 1; i < 11; i++) {
@@ -107,7 +107,7 @@ public class ProgressBar3 {
                             try {
                                 Thread.sleep(1000);
                             } catch (Throwable e2) {
-                            } // 停一�?
+                            } // 停一�?
                         }
                         disposeProgressBar();
                     }
@@ -115,7 +115,7 @@ public class ProgressBar3 {
                         display.asyncExec(new Runnable() {
                             public void run() {
                                 if (!statusbarLabel.isDisposed())
-                                    statusbarLabel.setText("前进到第" + i + "�?");
+                                    statusbarLabel.setText("前进到第" + i + "�?");
                                 System.out.println(progressBar.isDisposed());
                                 if (!progressBar.isDisposed()){
                                     progressBar.setSelection(i * 10);
@@ -130,7 +130,7 @@ public class ProgressBar3 {
                         display.asyncExec(new Runnable() {
                             public void run() {
                                 hideProbarButton.setEnabled(false);
-                                // 这一句不能放在线程外执行，否则progressBar被创建后就立即被dispose�?
+                                // 这一句不能放在线程外执行，否则progressBar被创建后就立即被dispose�?
                                 progressBar.dispose();
                                 b3.setEnabled(true);
                             }
@@ -146,19 +146,19 @@ public class ProgressBar3 {
         GridData gridData = new GridData(GridData.FILL_HORIZONTAL);
         gridData.heightHint = 19;
         statusbar.setLayoutData(gridData);
-        // 设置为用行列式布�?管理状�?�栏里的组件
+        // 设置为用行列式布�?管理状�?�栏里的组件
         GridLayout layout = new GridLayout(2, false);
         statusbar.setLayout(layout);
-        // 创建�?个用于显示文字的标签
+        // 创建�?个用于显示文字的标签
         statusbarLabel = new Label(statusbar, SWT.BORDER);
         statusbarLabel.setLayoutData(new GridData(100, 20));
     }
-    // 创建进度�?
+    // 创建进度�?
     private ProgressBar createProgressBar(Composite parent) {
         ProgressBar progressBar = new ProgressBar(parent, SWT.SMOOTH);
-        progressBar.setMinimum(0); // �?小�??
-        progressBar.setMaximum(100);// �?大�??
-        progressBar.setLayoutData(LayoutDataUtils.createFillGridNoVer(1));
+        progressBar.setMinimum(0); // �?小�??
+        progressBar.setMaximum(100);// �?大�??
+        progressBar.setLayoutData(LayoutDataUtil.createFillGridNoVer(1));
         return progressBar;
     }
 }
