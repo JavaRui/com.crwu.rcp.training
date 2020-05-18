@@ -22,8 +22,8 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
 import com.crwu.common.img.ImageFoctory;
-import com.utils.ShellBack;
-import com.utils.UiUtils;
+import com.crwu.utils.ShellBack;
+import com.crwu.utils.UiUtils;
 //http://www.blogjava.net/charles/archive/2009/04/29/268255.html
 public class MyTitleAreaDialog extends TitleAreaDialog {
     /**

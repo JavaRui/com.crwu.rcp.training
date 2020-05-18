@@ -15,10 +15,11 @@ import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
-import com.utils.ShellBack;
-import com.utils.UiUtils;
+
+import com.crwu.utils.ShellBack;
+import com.crwu.utils.UiUtils;
 /**
- * class desc�?
+ * class desc�?
  * 
  * @author ruien.wu
  * @date 2018-6-6
@@ -77,24 +78,24 @@ public class Demo4Listener {
                 //键盘事件
                 Text text2 = new Text(shell, SWT.BORDER);
                 text2.addKeyListener(new KeyListener() {
-                    // 完整的按下，松开的事�?
+                    // 完整的按下，松开的事�?
                     @Override
                     public void keyReleased(KeyEvent arg0) {
-                        System.out.println("键盘释放的事�?" + arg0);
+                        System.out.println("键盘释放的事�?" + arg0);
                     }
                     // 按下，且长按有效
                     @Override
                     public void keyPressed(KeyEvent arg0) {
-                        System.out.println("键盘按下的事�?" + arg0);
+                        System.out.println("键盘按下的事�?" + arg0);
                     }
                 });
-                //事件的另外一种写法�??
+                //事件的另外一种写法�??
                 Text text3 = new Text(shell, SWT.BORDER);
                 text3.addListener(SWT.SELECTED, new Listener() {
-                    //�?有的事件在control都是这样的写�?
+                    //�?有的事件在control都是这样的写�?
                     @Override
                     public void handleEvent(Event arg0) {
-                        System.out.println("点击�?");
+                        System.out.println("点击�?");
                     }
                 });
                 

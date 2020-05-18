@@ -20,12 +20,13 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.swt.widgets.TableItem;
-import com.utils.ShellBack;
-import com.utils.UiUtils;
+
+import com.crwu.utils.ShellBack;
+import com.crwu.utils.UiUtils;
 /**
  * @author Administrator
  *
- * 2014�?8�?22�?
+ * 2014�?8�?22�?
  */
 public class DragSimple {
     protected Shell shell;
@@ -80,7 +81,7 @@ public class DragSimple {
                 }
                 
             }
-            /**设置要传播的�?*/
+            /**设置要传播的�?*/
             @Override
             public void dragSetData(DragSourceEvent event) {
                 if(TextTransfer.getInstance().isSupportedType(event.dataType)){
@@ -108,7 +109,7 @@ public class DragSimple {
             
             @Override
             public void drop(DropTargetEvent event) {
-                TableItem item = (TableItem)event.item;//被碰撞的item,如果要获取drag的item�?要用传播的data去找�?
+                TableItem item = (TableItem)event.item;//被碰撞的item,如果要获取drag的item�?要用传播的data去找�?
                 if(item == null){
                     event.detail = DND.DROP_NONE;
                     return;
@@ -134,7 +135,7 @@ public class DragSimple {
                             break;
                         }
                     }
-                    if(it == null){//不存在，则创�?
+                    if(it == null){//不存在，则创�?
                         it = new TableItem(parent, SWT.None );
                         it.setText(0,name);
                         it.setText(1,"1");
@@ -190,11 +191,11 @@ public class DragSimple {
             
         }
         TableItem  item1 = new TableItem(table, 0);
-        item1.setText(new String[]{"cpu","�?","12000"});
+        item1.setText(new String[]{"cpu","�?","12000"});
         TableItem  item2 = new TableItem(table, 0);
-        item2.setText(new String[]{"内存","�?","120"});
+        item2.setText(new String[]{"内存","�?","120"});
         TableItem  item3 = new TableItem(table, 0);
-        item3.setText(new String[]{"笔记�?","�?","5500"});
+        item3.setText(new String[]{"笔记�?","�?","5500"});
         table.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true));
         table.setHeaderVisible(true);
         table.setLinesVisible(true);
@@ -206,7 +207,7 @@ public class DragSimple {
     
     public static Table createCartTable(Composite parent){
         Table table = new Table(parent, SWT.FULL_SELECTION);
-        String[] heads = {"产品","�?","总价"};
+        String[] heads = {"产品","�?","总价"};
         for(int i = 0;i<heads.length;i++){
             TableColumn col = new TableColumn(table, SWT.NONE);
             col.setText(heads[i]);

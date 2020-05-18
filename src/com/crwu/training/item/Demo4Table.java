@@ -19,11 +19,11 @@ import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.ui.internal.layout.LayoutUtil;
 import com.crwu.common.LayoutDataUtils;
-import com.utils.FileUtils;
-import com.utils.ShellBack;
-import com.utils.UiUtils;
+import com.crwu.utils.FileUtils;
+import com.crwu.utils.ShellBack;
+import com.crwu.utils.UiUtils;
 /**
- * class desc�?
+ * class desc�?
  * 
  * @author WuChengRui
  * @date 2018-6-6
@@ -40,7 +40,7 @@ public class Demo4Table {
         final Table table = new Table(shell, SWT.MULTI | SWT.FULL_SELECTION | SWT.CHECK);
         table.setLayoutData(LayoutDataUtils.createFillGrid()   );
         table.setHeaderVisible(true);// 设置显示表头
-        table.setLinesVisible(true);// 设置显示表格�?/*
+        table.setLinesVisible(true);// 设置显示表格�?/*
         // 创建表头的字符串数组
         final String[] tableHeader = { "姓名", "性别", "电话", "电子邮件" };
         for (int i = 0; i < tableHeader.length; i++) {
@@ -68,19 +68,19 @@ public class Demo4Table {
 //            tableColumn.setText(tableHeader[i]);
             // 设置表头可移动，默认为false
             tableColumn.setMoveable(true);
-            // 如果不调用pack，则要设置宽�?
+            // 如果不调用pack，则要设置宽�?
 //            tableColumn.pack();
         }
         table.setLayoutData(LayoutDataUtils.createFillGrid()   );
        
-        // 添加1行数�?
+        // 添加1行数�?
         TableItem item = new TableItem(table, SWT.NONE);
-        item.setText(new String[] { "张三", "�?", "123", "" });
+        item.setText(new String[] { "张三", "�?", "123", "" });
         // 设置图标
         item.setImage(new Image(null, FileUtils.getSrcDir()+"\\icons\\logo.gif"));
         for (int i = 0; i < 5; i++) {
             item = new TableItem(table, SWT.NONE);
-            item.setText(new String[] { "李四", "�?", "458"+i, "" });
+            item.setText(new String[] { "李四", "�?", "458"+i, "" });
         }
         initControls(shell,table);
     }

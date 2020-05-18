@@ -1,6 +1,6 @@
 package com.crwu.training.jface;
 /**
- * class  descï¼?
+ * class  descï¿½?
  * @author WuChengRui  
  * @date 2018-8-14  
  */
@@ -22,8 +22,9 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control; 
 import org.eclipse.swt.widgets.FileDialog; 
 import org.eclipse.swt.widgets.Shell; 
-import org.eclipse.swt.widgets.Text; 
-import com.utils.FileUtils;
+import org.eclipse.swt.widgets.Text;
+
+import com.crwu.utils.FileUtils;
 public class FileViewer extends ApplicationWindow { 
     Text text; 
     String content; 

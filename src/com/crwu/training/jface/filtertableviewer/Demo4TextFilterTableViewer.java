@@ -14,14 +14,15 @@ import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.swt.widgets.Text;
-import com.utils.ShellBack;
-import com.utils.UiUtils;
+
 import com.crwu.bean.SimpleBean;
 import com.crwu.common.RandomUtil;
 import com.crwu.common.table.CommonTableViewerContentProvider;
 import com.crwu.training.jface.tableviewer.SimpleLabelProvider;
+import com.crwu.utils.ShellBack;
+import com.crwu.utils.UiUtils;
 /**
- * class  desc�?
+ * class  desc�?
  * @author WuChengRui  
  * @date 2018-8-8  
  */
@@ -38,27 +39,27 @@ public class Demo4TextFilterTableViewer implements ShellBack {
         List<SimpleBean> list = createList();
        
         // 生成列头
-        String[] headers = new String[] { "id�?", "airCode�?", "airStart�?", "airEnd�?" };
-        // 1.定义�?个TableViewer对象. 同时在构造方法中定义其式�?. 这里设置成可以多�?(SWT.MULTI),
+        String[] headers = new String[] { "id�?", "airCode�?", "airStart�?", "airEnd�?" };
+        // 1.定义�?个TableViewer对象. 同时在构造方法中定义其式�?. 这里设置成可以多�?(SWT.MULTI),
         // 可以整行选择(SWT.FULL_SELECTION)
         final TableViewer tableviewer = new TableViewer(shell, SWT.H_SCROLL | SWT.BORDER 
                 | SWT.FULL_SELECTION | SWT.V_SCROLL);
         Table table = tableviewer.getTable();
         table.setHeaderVisible(true);// 设置标头
-        table.setLinesVisible(true);// 显示表格�?
-        // 2.建立TableViewer中的�?
+        table.setLinesVisible(true);// 显示表格�?
+        // 2.建立TableViewer中的�?
         TableLayout tLayout = new TableLayout();// 专用于表格的布局
         tableviewer.getTable().setLayout(tLayout);
         for (int i = 0; i < headers.length; i++) {
             String header = headers[i];
-            tLayout.addColumnData(new ColumnWeightData(120));// 这个是设置ID列的列宽�?80像素
+            tLayout.addColumnData(new ColumnWeightData(120));// 这个是设置ID列的列宽�?80像素
             new TableColumn(tableviewer.getTable(), SWT.NONE).setText(header);
         }
-        // 4.设定内容�?,�?般都不用修改这个�?
+        // 4.设定内容�?,�?般都不用修改这个�?
         tableviewer.setContentProvider(new CommonTableViewerContentProvider());
-        // 5.设定标签�?
+        // 5.设定标签�?
         tableviewer.setLabelProvider(new SimpleLabelProvider());
-        // 6.设置显示列数�?
+        // 6.设置显示列数�?
 //        list.add(0, new SimpleBean());
 //        list.clear();
         tableviewer.setInput(null);

@@ -13,8 +13,9 @@ import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
-import com.utils.ShellBack;
-import com.utils.UiUtils;
+
+import com.crwu.utils.ShellBack;
+import com.crwu.utils.UiUtils;
 /**
  * @author cr.wu
  *
@@ -23,7 +24,7 @@ public class InputPasswordDialog extends TitleAreaDialog {
     private Text userName;
     private Text password;
     private Text confirm;
-    public final String DEFAULT_INFO = "请输入要注册的用户名和密�?";
+    public final String DEFAULT_INFO = "请输入要注册的用户名和密�?";
     /**
      * @param parentShell
      */
@@ -34,9 +35,9 @@ public class InputPasswordDialog extends TitleAreaDialog {
     
     protected Control createContents(Composite parent){
         super.createContents(parent);
-        this.getShell().setText("用户注册对话�?");
+        this.getShell().setText("用户注册对话�?");
         this.setTitle("用户注册");
-        this.setMessage("请输入要注册的用户名和密�?");
+        this.setMessage("请输入要注册的用户名和密�?");
         return parent;
     }
     
@@ -44,7 +45,7 @@ public class InputPasswordDialog extends TitleAreaDialog {
         super.createDialogArea(parent);
         Composite composite = new Composite(parent,SWT.NONE);
         composite.setLayout(new GridLayout(2,true));
-        new Label(composite, SWT.NONE).setText("用户�?");;
+        new Label(composite, SWT.NONE).setText("用户�?");;
         
         userName = new Text(composite,SWT.BORDER);
         userName.addFocusListener (new FocusAdapter() {
@@ -69,10 +70,10 @@ public class InputPasswordDialog extends TitleAreaDialog {
     
     protected void checkValid(){
         if(!password.getText().equals(confirm.getText())){
-            setMessage("确认密码不一致，请重新输�?",IMessageProvider.WARNING);
+            setMessage("确认密码不一致，请重新输�?",IMessageProvider.WARNING);
             
         }else if(userName.getText().equals("")){
-            setMessage("用户名为�?",IMessageProvider.ERROR);
+            setMessage("用户名为�?",IMessageProvider.ERROR);
             
         }else setMessage(DEFAULT_INFO);
     }

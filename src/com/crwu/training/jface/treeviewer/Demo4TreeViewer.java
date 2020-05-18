@@ -13,10 +13,10 @@ import org.eclipse.swt.widgets.TreeItem;
 import com.crwu.training.jface.treeviewer.provider.ITreeFace;
 import com.crwu.training.jface.treeviewer.provider.TreeContentProvider;
 import com.crwu.training.jface.treeviewer.provider.TreeLabelProvider;
-import com.utils.ShellBack;
-import com.utils.UiUtils;
+import com.crwu.utils.ShellBack;
+import com.crwu.utils.UiUtils;
 /**
- * class  descï¼?
+ * class  descï¿½?
  * @author WuChengRui  
  * @date 2018-6-21  
  */

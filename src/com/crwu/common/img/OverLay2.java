@@ -8,13 +8,14 @@ import org.eclipse.swt.graphics.ImageData;
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.ui.internal.OverlayIcon;
-import com.utils.ShellBack;
-import com.utils.UiUtils;
+
 import com.crwu.common.UiEnumData.ALIGN_TYPE;
+import com.crwu.utils.ShellBack;
+import com.crwu.utils.UiUtils;
 /**
  * @author cr.wu
  * 
- *         2015�??7�??8�??
+ *         2015�??7�??8�??
  */
 public class OverLay2 extends OverlayIcon {
     
@@ -26,7 +27,7 @@ public class OverLay2 extends OverlayIcon {
 	private ImageDescriptor fOverlay = null;
 	private ALIGN_TYPE alignType = ALIGN_TYPE.center;
 	
-	/**坐标偏移�??*/
+	/**坐标偏移�??*/
 	private int offsetX = 0;
 	private int offsetY = 0;
 	public OverLay2(ImageDescriptor base, ImageDescriptor overlay, Point size) {

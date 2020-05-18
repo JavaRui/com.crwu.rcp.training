@@ -17,12 +17,13 @@ import org.eclipse.ui.IPartListener;
 import org.eclipse.ui.ISelectionListener;
 import org.eclipse.ui.IWorkbenchPart;
 import org.eclipse.ui.part.ViewPart;
-import com.utils.ShellBack;
-import com.utils.UiUtils;
+
 import com.crwu.rcp.training.action.SelectionProviderAction;
 import com.crwu.rcp.training.model.Country;
+import com.crwu.utils.ShellBack;
+import com.crwu.utils.UiUtils;
 /**
- * class descï¿??
+ * class descï¿½??
  * 
  * @author WuChengRui
  * @date 2018-6-26

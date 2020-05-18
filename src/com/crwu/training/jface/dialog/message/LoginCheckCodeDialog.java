@@ -20,8 +20,9 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
-import com.utils.ShellBack;
-import com.utils.UiUtils;
+
+import com.crwu.utils.ShellBack;
+import com.crwu.utils.UiUtils;
 public class LoginCheckCodeDialog extends Dialog {
     private Text text;
     private Label userLabel;
@@ -29,7 +30,7 @@ public class LoginCheckCodeDialog extends Dialog {
     private String picUrl;
     private Composite checkCode;
     /**
-     * 构�?�函�?
+     * 构�?�函�?
      */
     public LoginCheckCodeDialog(Shell parentShell) {
         super(parentShell);
@@ -37,7 +38,7 @@ public class LoginCheckCodeDialog extends Dialog {
     @Override
     protected void configureShell(Shell newShell) {
         super.configureShell(newShell);
-        newShell.setText("验证码输�?");
+        newShell.setText("验证码输�?");
     }
     public void setUrlUser(String pic , String user){
         userLabel.setText(user);
@@ -52,7 +53,7 @@ public class LoginCheckCodeDialog extends Dialog {
      */
     protected Control createDialogArea(Composite parent) {
         /*
-         * 不要直接在parent上创建组件，否则容易导致界面布局混乱�? 应该象本例再插入�?个面板topComp，并在此面板创建及布�?
+         * 不要直接在parent上创建组件，否则容易导致界面布局混乱�? 应该象本例再插入�?个面板topComp，并在此面板创建及布�?
          */
         Composite topComp = new Composite(parent, SWT.NONE);
         topComp.setSize(220, 500);
@@ -83,11 +84,11 @@ public class LoginCheckCodeDialog extends Dialog {
                 }
             }
         });
-        // 加入�?个文本标�?
-        new Label(topComp, SWT.NONE).setText("请输入验证码�?");
+        // 加入�?个文本标�?
+        new Label(topComp, SWT.NONE).setText("请输入验证码�?");
         new Label(topComp,SWT.NONE).setText("");
-        new Label(topComp, SWT.NONE).setText("看不清楚？请点击验证�?");
-        // 加入�?个文本框
+        new Label(topComp, SWT.NONE).setText("看不清楚？请点击验证�?");
+        // 加入�?个文本框
         text = new Text(topComp, SWT.BORDER);
         text.addKeyListener(new KeyAdapter() {
             public void keyReleased(KeyEvent arg0) {
@@ -97,7 +98,7 @@ public class LoginCheckCodeDialog extends Dialog {
                 }
             }
         });
-        // 用RowData来设置文本框的长�?
+        // 用RowData来设置文本框的长�?
         // text.setLayoutData(new RowData(100, -1));
         return topComp;
     }
@@ -106,7 +107,7 @@ public class LoginCheckCodeDialog extends Dialog {
      */
     // protected int getShellStyle() {
     // /*
-    // * super.getShellStyle()得到原有的式�? SWT.RESIZE：窗口可以变大小 SWT.MAX：窗口可�?大化、最小化
+    // * super.getShellStyle()得到原有的式�? SWT.RESIZE：窗口可以变大小 SWT.MAX：窗口可�?大化、最小化
     // */
     // return SWT.RESIZE | SWT.MAX;
     // //return 0;
@@ -123,8 +124,8 @@ public class LoginCheckCodeDialog extends Dialog {
     protected void initializeBounds() {
         /*
          * createButton(Composite parent, int id, String label,boolean
-         * defaultButton) 参数parent：取得放置按钮的面板�? 参数id：定义按钮的id�? 参数label：按钮上的文�?
-         * 参数defaultButton：是否为Dialog的默认按�?
+         * defaultButton) 参数parent：取得放置按钮的面板�? 参数id：定义按钮的id�? 参数label：按钮上的文�?
+         * 参数defaultButton：是否为Dialog的默认按�?
          */
         // super.createButton((Composite) getButtonBar(), APPLY_ID, "应用", true);
         super.createButton((Composite) getButtonBar(), IDialogConstants.OK_ID, "OK", false);
@@ -147,11 +148,11 @@ public class LoginCheckCodeDialog extends Dialog {
         URL url = new URL(u);
         // 打开链接
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-        // 设置请求方式�?"GET"
+        // 设置请求方式�?"GET"
         conn.setRequestMethod("GET");
-        // 超时响应时间�?5�?
+        // 超时响应时间�?5�?
         conn.setConnectTimeout(5 * 1000);
-        // 通过输入流获取图片数�?
+        // 通过输入流获取图片数�?
         InputStream inStream = conn.getInputStream();
         return inStream;
     }

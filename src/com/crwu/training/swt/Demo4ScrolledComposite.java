@@ -8,10 +8,11 @@ import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Shell;
-import com.utils.ShellBack;
-import com.utils.UiUtils;
+
+import com.crwu.utils.ShellBack;
+import com.crwu.utils.UiUtils;
 /**
- * class  desc�?
+ * class  desc�?
  * @author WuChengRui  
  * @date 2018-6-26  
  */
@@ -45,9 +46,9 @@ public class Demo4ScrolledComposite extends Composite{
             Button button = new Button(searchComp,SWT.PUSH);
             button.setText("btn:  "+i);
         }
-        //重要，一个ScrolledComposite只能设置�?个content
+        //重要，一个ScrolledComposite只能设置�?个content
         scComp.setContent(searchComp);
-        //重要，设置这个composite的真实尺�?
+        //重要，设置这个composite的真实尺�?
         searchComp.setSize(searchComp.computeSize(SWT.DEFAULT, SWT.DEFAULT));
         searchComp.layout();
         

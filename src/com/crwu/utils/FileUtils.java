@@ -1,4 +1,4 @@
-package com.utils;
+package com.crwu.utils;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -11,7 +11,7 @@ import com.crwu.rcp.training.Activator;
 /**
  * @author WuChengRui
  * @date 2018-5-15
- * @desc 文件处理�??
+ * @desc 文件处理�??
  */
 public class FileUtils {
     /**
@@ -39,7 +39,7 @@ public class FileUtils {
         return buffer;
     }
     /**
-     * 获取文件内的字符�??
+     * 获取文件内的字符�??
      * 
      * @param fileName
      * @return
@@ -49,7 +49,7 @@ public class FileUtils {
         return getStringFromFile(fileName, encoding);
     }
     /**
-     * 获取文件内的字符�??
+     * 获取文件内的字符�??
      * 
      * @param fileName
      *            文件路径
@@ -79,7 +79,7 @@ public class FileUtils {
         }
     }
     /**
-     * 获取项目的src的路�??
+     * 获取项目的src的路�??
      * 
      * @return
      */
@@ -91,7 +91,7 @@ public class FileUtils {
             String location = Activator.getDefault().getBundle().getLocation();
             filePath = location.replace("initial@reference:file:", "");
         } 
-        //�??般项�??
+        //�??般项�??
         else {
             filePath = System.getProperty("user.dir") + File.separatorChar + "";
         }

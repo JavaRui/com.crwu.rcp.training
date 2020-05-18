@@ -11,10 +11,11 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
-import com.utils.ShellBack;
-import com.utils.UiUtils;
+
+import com.crwu.utils.ShellBack;
+import com.crwu.utils.UiUtils;
 /**
- * class  desc�?
+ * class  desc�?
  * @author WuChengRui  
  * @date 2018-6-12  
  */
@@ -24,7 +25,7 @@ public class Demo4Dialog extends Dialog{
     }
     @Override
     protected Control createDialogArea(Composite parent) {
-        //�?般不会直接在parent创建子控件，因为parent还包含了buttonBar的面�?
+        //�?般不会直接在parent创建子控件，因为parent还包含了buttonBar的面�?
 //        Composite content = new Composite(parent, SWT.BORDER);
 //        content.setLayoutData(new GridData(GridData.FILL_BOTH));
 //        content.setLayout(new FillLayout());
@@ -35,7 +36,7 @@ public class Demo4Dialog extends Dialog{
     @Override
     protected void configureShell(Shell newShell) {
         newShell.setSize(500, 400);
-        newShell.setText("这是个标�?");
+        newShell.setText("这是个标�?");
         super.configureShell(newShell);
     }
     

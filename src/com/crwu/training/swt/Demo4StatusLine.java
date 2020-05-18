@@ -12,10 +12,10 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.ui.internal.layout.LayoutUtil;
 import com.crwu.common.LayoutDataUtils;
-import com.utils.ShellBack;
-import com.utils.UiUtils;
+import com.crwu.utils.ShellBack;
+import com.crwu.utils.UiUtils;
 /**
- * class descÔº?
+ * class descÔøΩ?
  * 
  * @author WuChengRui
  * @date 2018-8-15
@@ -47,7 +47,7 @@ public class Demo4StatusLine extends Composite{
         
         progressBar = new ProgressBar(this, SWT.SMOOTH);
         progressBar.setLayoutData(new GridData(200, 20));
-        progressBar.setMinimum(0); // Êú?Â∞èÂ??
+        progressBar.setMinimum(0); // ÔøΩ?Â∞èÔøΩ??
         
     }
     
@@ -57,7 +57,7 @@ public class Demo4StatusLine extends Composite{
     
     public void beginWork(String workName , int max){
         messageText.setText(workName);
-        progressBar.setMaximum(max);// Êú?Â§ßÂ??
+        progressBar.setMaximum(max);// ÔøΩ?Â§ßÔøΩ??
     }
     
     public void internalWorked(){

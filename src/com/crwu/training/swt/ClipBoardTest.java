@@ -17,12 +17,13 @@ import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.MenuItem;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
-import com.utils.ShellBack;
-import com.utils.UiUtils;
+
+import com.crwu.utils.ShellBack;
+import com.crwu.utils.UiUtils;
 /**
  * @author Administrator
  *
- * 2014å¹?8æœ?23æ—?
+ * 2014ï¿½?8ï¿½?23ï¿½?
  */
 public class ClipBoardTest {
     protected Shell shell;

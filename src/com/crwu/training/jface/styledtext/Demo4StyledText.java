@@ -12,12 +12,13 @@ import org.eclipse.swt.custom.StyledText;
 import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
-import com.utils.ShellBack;
-import com.utils.UiUtils;
+
+import com.crwu.utils.ShellBack;
+import com.crwu.utils.UiUtils;
 /**
  * @author Administrator
  *
- * 2014å¹?8æœ?20æ—?
+ * 2014ï¿½?8ï¿½?20ï¿½?
  */
 public class Demo4StyledText {
 	protected Shell shell;

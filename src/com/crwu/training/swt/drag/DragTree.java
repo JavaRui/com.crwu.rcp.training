@@ -18,12 +18,13 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Tree;
 import org.eclipse.swt.widgets.TreeItem;
-import com.utils.ShellBack;
-import com.utils.UiUtils;
+
+import com.crwu.utils.ShellBack;
+import com.crwu.utils.UiUtils;
 /**
  * @author Administrator
  *
- * 2014å¹?8æœ?22æ—?
+ * 2014ï¿½?8ï¿½?22ï¿½?
  */
 public class DragTree {
 	protected Shell shell;
